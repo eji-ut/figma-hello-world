@@ -1,23 +1,23 @@
-# Figma Plugin React Template
+# Erik's Figma Hellow World
 
-![62862431-71537f00-bd0e-11e9-85db-d97c0fb729a4](https://user-images.githubusercontent.com/16322616/62862692-46b5f600-bd0f-11e9-93b0-75955d1de8f3.png)
+Remaking the basic "Hello world" rectangle generator project for Figma.
 
-This template contains the react example as shown on [Figma Docs](https://www.figma.com/plugin-docs/intro/), with some structural changes and extra tooling.
+## Quick Start
 
-## Quickstart
+I used bun, but I feel like most people don't so here is the standard npm install:
 
-- Run `yarn` to install dependencies.
-- Run `yarn build:watch` to start webpack in watch mode.
-- Open `Figma` -> `Plugins` -> `Development` -> `Import plugin from manifest...` and choose `manifest.json` file from this repo.
+1. Clone the repo
+1. Run `npm install` to install all of the dependencies and libraries.
+1. Start the project:
+    - Run `npm run dev` to start webpack in watch mode.
+    - Run `npm run start` to start webpack in production build.
+1. Open `Figma` -> `Plugins` -> `Development` -> `Import plugin from manifest...` and choose `manifest.json` file from this repo.
 
-⭐ To change the UI of your plugin (the react code), start editing [App.tsx](./src/app/components/App.tsx).  
-⭐ To interact with the Figma API edit [controller.ts](./src/plugin/controller.ts).  
-⭐ Read more on the [Figma API Overview](https://www.figma.com/plugin-docs/api/api-overview/).
+## Quick Tour
 
-## Toolings
+A quick run down of where what is in my repo.
 
-This repo is using:
-
-- React + Webpack
-- TypeScript
-- Prettier precommit hook
+`app/components/`  — all of the UI is in here.
+`app/styles/` — global style sheet, Tailwind entry point is here.
+`app/util` — where I keep my neat functions.
+`plugin/` — where all of the Figma "receiver" communication goes; see [how Figma ui works](https://www.figma.com/plugin-docs/api/figma-ui/).
