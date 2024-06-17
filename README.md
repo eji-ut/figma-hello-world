@@ -1,4 +1,4 @@
-# Erik's Figma Hellow World
+# Erik's Figma Hello World
 
 Remaking the basic "Hello world" rectangle generator project for Figma.
 
